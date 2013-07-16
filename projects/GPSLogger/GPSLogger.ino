@@ -42,7 +42,7 @@ void loop() {
     }
   }
   if (dataString != "") {
-    Serial.println(dataString);
+    Serial.println(dataString); // don't print empty string to serial
   }
   dataFile.print(dataString); // write to file
   dataFile.close(); // close file
